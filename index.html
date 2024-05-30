@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 1px;
+    background-color: #cdcdcd;
+    margin: 25px 0px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(236, 236, 236, 0.1); */
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .first-part-main {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 0 0 25px 0px;
+    gap: 6em;
+  }
+
+  .first-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .first-left-top {
+    margin-bottom: 100px;
+  }
+
+  .first-left-top img {
+    width: 80px;
+    height: auto;
+  }
+
+  .QR-img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .first-right {
+    width: 30vh;
+
+    white-space: wrap;
+  }
+
+  .first-right>h3 {
+    margin-bottom: 15px;
+  }
+
+  .first-right>p {
+    margin-top: 9px;
+  }
+
+  .email {
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  /* -----------second part------------ */
+
+  .part-two-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  /* ---------------payment- mode------------------- */
+
+  /* ------------third-part-------------- */
+
+  .part-three-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .ship-box {
+    margin-top: 20px;
+  }
+
+  .ship-box p {
+    margin-bottom: 5px;
+  }
+
+  /* --------------fourth part ---------------- */
+
+  .order-dets {
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .order-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+    /* margin-right: 20px; */
+  }
+
+  .greatings-main {
+    margin: 25px 0px;
+  }
+
+  .greatings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .greatings h3 {
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    outline: 1.7px solid #000000;
+  }
+
+  .signature {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+
+  .total-border  {
+    border: 1.7px solid #000;
+  
+}
+</style>
+
+<body>
+  <div class="main">
+    <div class="first-part-container">
+      <div class="first-part-main">
+        <div class="first-left">
+          <div class="first-left-top">
+            <img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="logo" />
+          </div>
+        </div>
+        <div class="first-right">
+          <a href="#">flipkart.com</a>
+
+          <p>
+            G2, sai bhavna appartment, manya path, Ambedkar nagar, Bailey
+            road, Patna, Bihar
+          </p>
+          <p>0987654321</p>
+          <p class="email">email@example.com</p>
+          <a href="#">flipkart.com</a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="part-two-container">
+      <div class="part-two-main">
+        <table>
+          <tr>
+            <th>Invoice No.:</th>
+            <td>9w7e6536r583535</td>
+          </tr>
+          <tr>
+            <th>Invoices Date:</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Order Date:</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Delivery Date:</th>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <div class="payment-mode-main">
+      <h3>payment mode:</h3>
+    </div>
+    <hr />
+    <div class="part-three-container">
+      <div class="part-three-main">
+        <div class="part-three-left">
+          <h3>Ship To -</h3>
+          <div class="ship-box">
+            <p>Customer Name</p>
+            <p>Customer address</p>
+            <p>Zip code</p>
+            <p>Customer email</p>
+          </div>
+        </div>
+        <div class="part-three-right">
+          <h3>Bill To -</h3>
+          <div class="ship-box">
+            <p>Recipient Name</p>
+            <p>Recipient address</p>
+            <p>Zip code</p>
+            <p>Recipient email</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="part-four-container">
+      <div class="part-four-main">
+        <h3 class="order-dets">Order/Price Details:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>S.No.</th>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>GST</th>
+              <th>Final Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mobile</td>
+              <td>200</td>
+              <td>1</td>
+              <td>18%</td>
+              <td>236</td>
+            </tr>
+            <tr class="total-border">
+              <td><span> total </span></td>
+              <td><span> 1 </span></td>
+              <td><span> 200 </span></td>
+              <td><span> 2 </span></td>
+              <td><span> 18% </span></td>
+              <td><span> 236 </span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="order-total">
+          <p>Grand Total: <span>$236</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="greatings-main">
+      <div class="greatings">
+        <h3>thank you for shopping with us</h3>
+      </div>
+      <div class="signature">
+        <p>authorized signature</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
